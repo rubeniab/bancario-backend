@@ -1,0 +1,124 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Backend NODE.js API",
+    "description": "Esta es una API en node.js",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/*slat": {
+      "get": {
+        "description": "",
+        "responses": {
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/bancos/filtros": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "LINEA_CAP2": {
+                  "type": "string",
+                  "example": "any",
+                  "nullable": true
+                },
+                "CONG": {
+                  "example": "any"
+                },
+                "REGION": {
+                  "example": "any"
+                },
+                "MANZ": {
+                  "example": "any"
+                },
+                "LOTE": {
+                  "example": "any"
+                },
+                "NIVEL": {
+                  "example": "any"
+                },
+                "DEPTO": {
+                  "example": "any"
+                },
+                "TIPO_PRED": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/filtros": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "LINEA_CAP2": {
+                  "type": "string",
+                  "example": "any"
+                },
+                "CONG": {
+                  "example": "any"
+                },
+                "REGION": {
+                  "example": "any"
+                },
+                "MANZ": {
+                  "example": "any"
+                },
+                "LOTE": {
+                  "example": "any"
+                },
+                "NIVEL": {
+                  "example": "any"
+                },
+                "DEPTO": {
+                  "example": "any"
+                },
+                "TIPO_PRED": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "desarrollador",
+    "password": "D3s@rr0ll@d0r",
+    "database": "bancario",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "desarrollador",
+    "password": "D3s@rr0ll@d0r",
+    "database": "bancario",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "desarrollador",
+    "password": "D3s@rr0ll@d0r",
+    "database": "bancario",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
