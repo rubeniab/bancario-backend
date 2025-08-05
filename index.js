@@ -31,6 +31,8 @@ app.get('/*slat', (req, res) => {res.status(404).send("Recurso no encontrado")})
 const errorHandler = require('./middleware/errorhandler.middleware')
 app.use(errorHandler)
 
+const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
     console.log(`Aplicacion escuchando en el puerto ${PORT}`)
 })
