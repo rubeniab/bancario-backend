@@ -120,7 +120,7 @@ self.generarReporte = async function(req, res, next) {
 
     doc.y = y + 8; // espacio después de los datos
 
-    const imagenExtraPath = path.resolve(__dirname, '../images/BBVA_RGB.PNG'); // Ruta imagen extra
+    const imagenExtraPath = path.resolve(__dirname, '../images/BBVA.png'); // Ruta imagen extra
     const imageExtraWidth = 50;   // Ajusta tamaño
     const imageExtraHeight = 20;  // Ajusta tamaño
     const imageExtraX = (pageWidth - imageExtraWidth) / 2;  // Centrado horizontal
