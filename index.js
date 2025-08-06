@@ -12,9 +12,11 @@ app.use(express.urlencoded ({ extended: false}))
 
 //Se require si se accede desde un navegador web
 var corsOptions = {
-    origin: ["http://localhost:8080", "http://localhost:8081", "http://localhost:5173"],
+    origin: ["http://localhost:8080", "http://localhost:8081", "http://localhost:5173", "https://bancario-front.onrender.com"],
     methods: "GET, PUT, POST, DELETE",
-    exposedHeaders: ['Content-Disposition', 'Content-Type']
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    exposedHeaders: ['Content-Disposition', 'Content-Type'],
+    credentials: true
 }
 
 app.use(cors(corsOptions))
